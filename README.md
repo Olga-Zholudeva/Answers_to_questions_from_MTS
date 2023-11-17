@@ -56,17 +56,20 @@
 
 10. Какой код вызовет ошибку и почему?
 
-а) let greeting = "say Hi";   
+а) 
+   let greeting = "say Hi";   
    greeting = "Say Hello insead";   
 
 В данном коде ошибки не будет, т.к. переменная greeting объявлена при помощи let и поэтому ее значение может быть изменено
 
-b) let greeting = "say Hi";   
+b) 
+   let greeting = "say Hi";   
    let greeting = "Say Hello insead";   
 
 Этот код вызовет ошибку, т.к. переменная greeting объявлена при помощи let и поэтому не может быть объвлена повторно
 
-c) let greeting = "say Hi";   
+c) 
+   let greeting = "say Hi";   
    if (true) {   
    let greeting = "Say Hello insead";   
    console.log(greeting);   
@@ -115,11 +118,11 @@ WHERE column_name = 'personal_account_id';
 
 16. Есть 3 таблицы с популярными именами, фамилиями и отчествами (name, surname, patronymic). Необходимо составить запрос, который выведет все возможные варианты сочетаний ФИО в одной таблице с тремя колонками по уменьшению популярности. В исходных таблицах есть колонки value и popularity 
 
-SELECT name.value, surname.value, patronymic.value
-FROM name
-CROSS JOIN surname ON name.value = surname.value
-CROSS JOIN patronymic ON surname.value = patronymic.value
-ORDER BY (name.popularity + surname.popularity + patronymic.popularity) DESC;
+SELECT name.value, surname.value, patronymic.value  
+FROM name   
+CROSS JOIN surname ON name.value = surname.value  
+CROSS JOIN patronymic ON surname.value = patronymic.value   
+ORDER BY (name.popularity + surname.popularity + patronymic.popularity) DESC;   
 
 17. Вызовет ли ошибку данный запрос: SELECT product_type, COUNT(*) FROM products:
 
@@ -132,5 +135,5 @@ GROUP BY product_type;
 
 ## Тестовый проект
 
-Проект выполнила во FLask, т.к. Django избыточен для этой задачи.
+Проект выполнила во FLask, т.к. посчитала, что Django избыточен для этой задачи.   
 Проект находится в отдельном репозитории тут https://github.com/Olga-Zholudeva/Test_MTS
