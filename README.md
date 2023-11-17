@@ -56,19 +56,19 @@
 
 10. Какой код вызовет ошибку и почему?
 
-а) 
+а)    
    let greeting = "say Hi";   
    greeting = "Say Hello insead";   
 
 В данном коде ошибки не будет, т.к. переменная greeting объявлена при помощи let и поэтому ее значение может быть изменено
 
-b) 
+b)    
    let greeting = "say Hi";   
    let greeting = "Say Hello insead";   
 
 Этот код вызовет ошибку, т.к. переменная greeting объявлена при помощи let и поэтому не может быть объвлена повторно
 
-c) 
+c)    
    let greeting = "say Hi";   
    if (true) {   
    let greeting = "Say Hello insead";   
